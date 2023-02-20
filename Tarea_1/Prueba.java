@@ -12,10 +12,10 @@ public class Prueba {
         String carpeta;
         String palabra;
     
-        System.out.println("Ingrese la ubicacion de la carpeta");
+        System.out.println("Ingrese la ubicacion de la carpeta:");
         carpeta = scan.nextLine();
     
-        System.out.println("Ingrese la ubicacion de la carpeta");
+        System.out.println("Ingrese la palabra a buscar:");
         palabra = scan.nextLine();
         scan.close();
     

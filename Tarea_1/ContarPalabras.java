@@ -40,7 +40,7 @@ public class ContarPalabras {
             }
 
             if(esTexto){
-                System.out.println("La palabra \"" + palabra + "\" aparece " + total + " veces en los archivos de la carpeta.");
+                System.out.println("La palabra \"" + palabra + "\" aparece " + total);
     
             }else{
                 System.out.println("No se encontraron archivos de texto en la carpeta");
