@@ -1,6 +1,6 @@
 package Taller_Interfaces_1.Ejercicio_1;
 
-public class Paquete {
+public class Paquete implements ITransportable {
     Double largo;
     Double ancho;
     Double alto;
@@ -11,17 +11,13 @@ public class Paquete {
         this.alto = alto;
     }
 
-    public Double getLargo() {
-        return largo;
+    public double calcularPeso(){
+        double peso = calcularVolumen() * 4;
+        return peso;
     }
 
-    public Double getAncho() {
-        return ancho;
+    public double calcularVolumen(){
+        double volumen = (largo * ancho * alto); 
+        return volumen;
     }
-
-    public Double getAlto() {
-        return alto;
-    }
-
-    
 }
