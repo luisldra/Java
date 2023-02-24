@@ -5,22 +5,24 @@ import java.util.Scanner;
 public class taller {
   public static void main(String[] args) {
 
-    try (Scanner scanner = new Scanner(System.in)) {
-      System.out.println("Ingrese su fecha de nacimiento");
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Ingrese su fecha de nacimiento");
 
-      System.out.println("dia:");
-      int dia = scanner.nextInt();
+    System.out.println("dia:");
+    int dia = scanner.nextInt();
 
-      System.out.println("mes");
-      int mes = scanner.nextInt();
+    System.out.println("mes");
+    int mes = scanner.nextInt();
 
-      System.out.println("año");
-      int año = scanner.nextInt();
+    System.out.println("año");
+    int año = scanner.nextInt();
 
-      Fecha fecha = new Fecha(año, mes, dia);
+    scanner.close();
 
-      System.out.println(fecha.crearFecha());
-    }
+    Fecha fecha = new Fecha(año, mes, dia);
+
+    System.out.println(fecha.crearFecha());
+  
 
 }
 }
