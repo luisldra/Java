@@ -8,12 +8,23 @@ public class ContarPalabras {
     String carpeta;
     String palabra;
 
-    public ContarPalabras(String carpeta, String palabra) {
-        this.carpeta = carpeta;
-        this.palabra = palabra;
+    public void recibirRuta (){
+        Scanner scan = new Scanner(System.in);
+    
+        // D:\\Usuarios\\Luisda\\Descargas\\U\\Ingenieria de Software\\Java\\Tarea_1\\pruebas\\pruebas1
+    
+        System.out.println("Ingrese la ubicacion de la carpeta:");
+        carpeta = scan.nextLine();
+    
+        System.out.println("Ingrese la palabra a buscar:");
+        palabra = scan.nextLine();
+        scan.close();
     }
 
     public void encontrarCarpeta (){
+
+        recibirRuta();
+
         File dir = new File(carpeta);
         int contador = 0;
         int total = 0;
