@@ -10,17 +10,22 @@ public class Fecha {
     private int dia;
 
     public Fecha(int año, int mes, int dia) {
+        
         this.año = año;
         this.mes = mes;
         this.dia = dia;
     }
 
-    public String crearFecha (){
+    public void crearFecha (){
+
         LocalDate fecha = LocalDate.of(año,mes,dia);
         DayOfWeek diaSemana = fecha.getDayOfWeek();
 
         String dia = diaSemana.toString();
+        diaSemana(dia);    
+    }
 
+    public void diaSemana(String dia){
         String valor = "";
 
         switch (dia){
@@ -49,7 +54,7 @@ public class Fecha {
                 valor = "No es un dia de la semana valido";
         }
 
-        return valor;
+        System.out.println(valor);
     }
 
 }

@@ -19,9 +19,25 @@ public class taller {
 
     scanner.close();
 
-    Fecha fecha = new Fecha(año, mes, dia);
+    
+    controlFecha c1 = new controlFecha();
 
-    System.out.println(fecha.crearFecha());
+    if (!c1.validarFecha(dia, mes, año)) {
+      System.out.println("La fecha ingresada es invalida");
+    }
+    
+    /**
+     * Opcion
+     
+      try {
+        fecha.crearFecha();
+      } catch (Exception e) {
+        System.out.println("Fecha mala " + e.getMessage());
+      }
+
+     */
+   
+    
   
 
 }

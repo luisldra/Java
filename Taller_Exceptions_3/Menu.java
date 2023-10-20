@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Menu {
-    List<String> platos= new ArrayList<String>();
-    ;
+    private List<String> platos= new ArrayList<String>();
 
     public void adicionarPlato(String nombre) throws PlatoYaRegistradoException {
 
@@ -16,7 +15,7 @@ public class Menu {
         }
     }
 
-    public boolean platoRegistrado(String nombre) {
+    private boolean platoRegistrado(String nombre) {
         boolean registrado = false;
 
         if(platos.contains(nombre)){
